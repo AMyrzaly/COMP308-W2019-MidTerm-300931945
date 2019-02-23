@@ -75,7 +75,7 @@ router.get('/:id', (req, res, next) => {
 
 // POST - process the information passed from the details form and update the document
 router.post('/:id', (req, res, next) => {
-    let id = req.param.id;
+    let id = req.params.id;
 
     let updateContact = book({
       "_id": id,
@@ -100,10 +100,18 @@ router.post('/:id', (req, res, next) => {
 
 // GET - process the delete by user id
 router.get('/delete/:id', (req, res, next) => {
+  let id = req.params.id;
 
-    /*****************
-     * ADD CODE HERE *
-     *****************/
+  book.remove({_id: id}, (err) => {
+    if(err){
+      console.log(err);
+      res.end(err);
+    }
+    else{
+      //refresh the contact list
+      res.redirect('/books');
+    }
+  })
 });
 
 
