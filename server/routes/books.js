@@ -56,8 +56,8 @@ router.post('/add', (req, res, next) => {
 
 // GET the Book Details page in order to edit an existing Book
 router.get('/:id', (req, res, next) => {
-    let id = req.param.id;
-
+    
+    let id = req.params.id;
     book.findById(id, (err, bookObject) => {
       if(err){
         console.log(err);
