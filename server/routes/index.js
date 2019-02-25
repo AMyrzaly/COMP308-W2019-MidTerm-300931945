@@ -1,3 +1,11 @@
+/*
+Midterm test
+File name: index.js
+Author: Abubakir Myrzaly
+StudentID: 300931945
+*/
+
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();

@@ -1,3 +1,10 @@
+/*
+Midterm test
+File name: books.js
+Author: Abubakir Myrzaly
+StudentID: 300931945
+*/
+
 let mongoose = require('mongoose');
 
 // create a model class

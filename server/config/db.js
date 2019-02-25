@@ -1,3 +1,10 @@
+/*
+Midterm test
+File name: db.js
+Author: Abubakir Myrzaly
+StudentID: 300931945
+*/
+
 module.exports = {
   //local MongoDB deployment ->
   //"URI": "mongodb://localhost/books308"

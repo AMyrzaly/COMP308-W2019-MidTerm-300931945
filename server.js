@@ -1,3 +1,10 @@
+/*
+Midterm test
+File name: server.js
+Author: Abubakir Myrzaly
+StudentID: 300931945
+*/
+
 let app = require('./server/app');
 let debug = require('debug')('comp308-w2019-midterm:server');
 let http = require('http');
